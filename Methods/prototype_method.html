@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //string
+        let name="zin mar myint";
+        let text="lorem, ipsum dolor sit amet consectetur adipisicing dolor elit."
+
+        //number
+        let age = 26;
+        let myBtc = 2.47295023;
+        let weight = "18.46lb";
+        let money = "181$";
+
+        //object
+        let me = {
+            name : "zin mar myint",
+            age : 23,
+            skill : ['html','css','js'],
+            haveBoyFriend : false
+        }
+    </script>
+</body>
+</html>
+
+name
+'zin mar myint'
+text
+'lorem, ipsum dolor sit amet consectetur adipisicing dolor elit.'
+text.length
+63
+name.substr(0,4)
+'zin '
+name.search("mar")
+4
+name.search("abc")
+-1
+name.replace("zin","may")
+'may mar myint'
+text.replace("dolor","abc")
+'lorem, ipsum abc sit amet consectetur adipisicing dolor elit.'
+text.replace(/dolor/g,"abc")
+'lorem, ipsum abc sit amet consectetur adipisicing abc elit.'
