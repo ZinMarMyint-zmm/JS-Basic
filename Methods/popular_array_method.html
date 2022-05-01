@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fruits =['orange','mango','apple','watermelon'];
+        let marks = [45,50,80,69,12,38];
+
+        // let newArr = fruits.map(function(element,index){
+        //     console.log(element+"-"+index);
+        // })
+        // let newArr=marks.map(function(element){
+        //     return element>=40 ? "pass" : "fail";
+        // })
+        // console.log(newArr);
+
+        // let newArr=fruits.filter(function(el){
+        //     return el.length>5;
+        // })
+        // console.log(newArr);
+
+        // let newArr=fruits.find(function(el){
+        //    console.log(el);
+        //    return el.length==5;
+        // })
+        // console.log(newArr);
+
+        // let newArr = fruits.reduce(function(p,c){
+        //     console.log(p+"-"+c);
+        //     return p+c;
+        // },"0");
+
+        // let newArr = marks.some(function(el){
+        //     console.log(el);
+        //     return el<40 ;
+        // });
+
+        let newArr = marks.every(function(el){
+            console.log(el);
+            return el>=40 ;
+        });
+        console.log(newArr);
+
+    </script>
+</body>
+</html>
