@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1>Hello</h1>
+    <h1>Good Morning</h1>
+    <h1>How are you?</h1>
+    <h1>I am Good</h1>
+
+    <script>
+        let fruits =['orange','mango','apple','watermelon'];
+
+        // for(let i=0;i<fruits.length;i++){
+        //     console.log(i,fruits[i]);//index
+        // }
+
+        // for(fruit of fruits){
+        //     console.log(fruit);
+        // }
+
+        let ul = document.createElement("ul");
+        
+
+        fruits.forEach(function(i,index){
+            console.log(i);
+            let li = document.createElement("li");
+            let text = document.createTextNode(i+ "-"+index);
+            li.append(text);
+            ul.append(li);
+            
+        });
+        document.body.prepend(ul);
+
+        let allH1 = document.querySelectorAll("h1");
+        let h1Arr = [];
+        allH1.forEach(function(i){
+            console.log(i.innerText);
+            h1Arr.push(i.innerText)
+        })
+    </script>
+    
+</body>
+</html>
